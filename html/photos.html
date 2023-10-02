@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <title>Biblioteca do Pensamento | Fotos</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/photos_style.css">
+
+</head>
+<body>
+    <header class="header">
+        <!-- navbar -->
+        <ul class="nav justify-content-center">
+            <img class="logo" src="http://placekitten.com/50/52" alt="Logotipo">
+            <li class="nav-item">
+            <a class="nav-link active" href="../index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html#about">SOBRE</a>
+            </li> 
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html#contact">CONTATO</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="html/photos.html">FOTOS</a>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    MAIS
+                    </a>
+                
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="handouts.html">Apostilas</a>
+                    <a class="dropdown-item" href="#">Roteiros</a>
+                    <a class="dropdown-item" href="#">Textos</a>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+        <!-- navbar ends -->
+    </header>
+
+    <div class="container text-center photo-grid">
+        <div class="row">
+          <div class="col">
+            <img class="card-img-top" src="http://placekitten.com/600/400/" alt="Imagem de capa do card">
+            <div class="heart-btn">
+                <div class="content">
+                  <span class="heart"></span>
+                  <span class="text">Like</span>
+                  <span class="numb"></span>
+                </div>
+              </div>
+        </div>
+          <div class="col">
+            <img class="card-img-top" src="http://placekitten.com/400/300/" alt="Imagem de capa do card">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <img class="card-img-top" src="http://placekitten.com/500/350/" alt="Imagem de capa do card">
+          </div>
+          <div class="col">
+            <img class="card-img-top" src="http://placekitten.com/400/600/" alt="Imagem de capa do card">
+          </div>
+          <div class="col">
+            <img class="card-img-top" src="http://placekitten.com/500/800/" alt="Imagem de capa do card">
+          </div>
+        </div>
+      </div>
+
+    <!-- footer starts -->
+    <section class="footer">
+
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f" target=""></a>
+            <a href="#" class="fab fa-twitter" target=""></a>
+            <a href="#" class="fab fa-linkedin" target=""></a>
+            <a href="https://www.instagram.com/bibliotecadopensamento/" class="fab fa-instagram" target="_blank"></a>
+            <a href="https://api.whatsapp.com/message/KB5ZR3ZHPOP4L1?autoload=1&app_absent=0" class="fab fa-whatsapp" target="_blank"></a>
+        </div>
+    
+        <div class="links">
+            <a href="#home">HOME</a>
+            <a href="#about">SOBRE</a>
+            <a href="#review">TEXTOS</a>        
+            <a href="html/photos.html">FOTOS</a>
+            <a href="#review">ROTEIROS</a>        
+            <a href="#blogs">APOSTILAS</a>
+            <a href="#contact">CONTATO</a>
+        </div>
+        <div class="whatsapp-icon">
+            <a href="https://api.whatsapp.com/send?phone=5511981168788&text=Olá%20Julia!" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        <div class="credit">©2023 por Biblioteca do Pensamento.<br>page created by <span>n.rick16</span> | all rights reserved</div>
+    </section>
+    <!-- footer ends -->
+
+    <!-- scripts starts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <!-- script 4 baloon -->
+        <script>
+            $(document).ready(function(){
+              $('.content').click(function(){
+                $('.content').toggleClass("heart-active")
+                $('.text').toggleClass("heart-active")
+                $('.numb').toggleClass("heart-active")
+                $('.heart').toggleClass("heart-active")
+              });
+            });
+          </script> 
+    <!-- script ends -->
+</body>
+</html>
