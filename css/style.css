@@ -39,7 +39,11 @@ section{
     padding:1rem 5%;
 }
 
-.header{
+.grid{
+    margin: 8%;
+}
+
+/* .header{
     background-color: var(--contrast); 
     position: fixed;
     display: flex;
@@ -69,6 +73,18 @@ section{
     color:var(--main-color);
     border-bottom: .1rem solid var(--main-color);
     padding-bottom: .5rem;
+} */
+
+.navbar{
+    background-color: #010103;
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 100;
+}
+
+.icon-fab li{
+    margin-left: 5%;
+    background-color: #25d366;
 }
 
 .home{
@@ -134,7 +150,7 @@ section{
     padding:1rem 0;
 }
 
-.footer .share a{
+.share a{
     height: 4rem;
     width: 4rem;
     line-height: 4rem;
@@ -145,6 +161,14 @@ section{
     border-radius: 50%;
 }
 
+.share-top a{
+    height: 2rem;
+    width: 2rem;
+    line-height: 2rem;
+    font-size: .5;
+    color: var(--highlighted-text);
+    border: none;
+}
 .footer .share a:hover{
     background-color: var(--contrast);
 }

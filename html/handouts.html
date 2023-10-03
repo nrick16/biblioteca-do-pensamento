@@ -14,53 +14,76 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/photos_style.css">
+    <link rel="stylesheet" href="../css/handouts_style.css">
 
 </head>
 <body>
-    <header class="header">
-        <!-- navbar -->
-        <ul class="nav justify-content-center">
-            <img class="logo" src="http://placekitten.com/50/52" alt="Logotipo">
-            <li class="nav-item">
-            <a class="nav-link active" href="../index.html">HOME</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="../index.html#about">SOBRE</a>
-            </li> 
-            <li class="nav-item">
-                <a class="nav-link" href="../index.html#contact">CONTATO</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="html/photos.html">FOTOS</a>
-            </li>
-            <li class="nav-item">
-                <div class="dropdown">
-                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    MAIS
-                    </a>
-                
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="handouts.html">Apostilas</a>
-                    <a class="dropdown-item" href="#">Roteiros</a>
-                    <a class="dropdown-item" href="#">Textos</a>
-                    </div>
-                </div>
-            </li>
+   <!-- header section starts  -->
 
+   <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+        <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="Biblioteca"><img src="../img/logo.png" width="30px" alt=""> </a>
+
+        <div class="navbar-nav-scroll">
+        <ul class="navbar-nav bd-navbar-nav flex-row">
+            <li class="nav-item">
+            <a class="nav-link " href="/">Início</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link " href="../index.html#about">Sobre</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link " href="../index.html#contact">Contato</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="portfolio.html" target="_blank" rel="noopener">Portfólio</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link active" href="handouts.html" target="_blank" rel="noopener">Apostilas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" rel="noopener">Roteiros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" rel="noopener">Textos <small>(Autorais)</small></a>
+              </li>
         </ul>
-        <!-- navbar ends -->
+        </div>
+    
+        <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex share share-top">
+    
+        <li class="nav-item">
+            <a href="https://www.instagram.com/bibliotecadopensamento/" class="fab fa-instagram" target="_blank">   |</a>
+        </li>
+        <li class="nav-item">
+            <a href="https://api.whatsapp.com/message/KB5ZR3ZHPOP4L1?autoload=1&app_absent=0" class="fab fa-whatsapp" target="_blank">   |</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="fab fa-linkedin" target=""></a>
+        </a>
+        </li>
+        </ul>
+            <!-- navbar ends -->
     </header>
 
-    <div class="container text-center photo-grid">
+    <div class="container text-center grid text-format">
 
         <h2>Apostilas</h2>
+        <p>Baixe e estude com as apostilas introdutórias de fotografia e roteiro.</p>
         <div class="row">
           <div class="col">
-            <img class="card-img-top" src="http://placekitten.com/600/400/" alt="Imagem de capa do card">
+            <h3>FOTOGRAFIA COM O CELULAR</h3>
+            <img class="card-img-top" src="https://picsum.photos/600/400" alt="Imagem de capa do card">
+            <h4>Aprenda o básico de forma simples</h4>
+            <h5>Essa apostila explica o básico da fotografia com o celular e irá te ajudar a tirar fotos lindas só com o seu smartfone.</h5>
+            <button type="button" class="btn btn-danger">Download</button>
         </div>
           <div class="col">
-            <img class="card-img-top" src="http://placekitten.com/400/300/" alt="Imagem de capa do card">
+            <h3>INTRODUÇÃO AO ROTEIRO</h3>
+            <img class="card-img-top" src="https://picsum.photos/600/450" alt="Imagem de capa do card">
+            <h4>Escrever nunca foi tão simples</h4>
+            <h5>Essa apostila, baseada em muitas pesquisas, ira te mostrar o básico do roteiro, tanto na formatação como na criação de uma história.
+                Leia e comece a escrever!</h5>
+            <button type="button" class="btn btn-danger">Download</button>
           </div>
         </div>        
       </div>
@@ -77,13 +100,13 @@
         </div>
     
         <div class="links">
-            <a href="#home">HOME</a>
-            <a href="#about">SOBRE</a>
-            <a href="#review">TEXTOS</a>        
+            <a href="../index.html#home">HOME</a>
+            <a href="../index.html#about">SOBRE</a>
+            <a href="html/texts.html">TEXTOS</a>        
             <a href="html/photos.html">FOTOS</a>
-            <a href="#review">ROTEIROS</a>        
-            <a href="#blogs">APOSTILAS</a>
-            <a href="#contact">CONTATO</a>
+            <a href="html/itineraries.html">ROTEIROS</a>        
+            <a href="handouts.html">APOSTILAS</a>
+            <a href="../index.html#contact">CONTATO</a>
         </div>
         <div class="whatsapp-icon">
             <a href="https://api.whatsapp.com/send?phone=5511981168788&text=Olá%20Julia!" target="_blank">
@@ -98,17 +121,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        <!-- script 4 baloon -->
-        <script>
-            $(document).ready(function(){
-              $('.content').click(function(){
-                $('.content').toggleClass("heart-active")
-                $('.text').toggleClass("heart-active")
-                $('.numb').toggleClass("heart-active")
-                $('.heart').toggleClass("heart-active")
-              });
-            });
-          </script> 
-    <!-- script ends -->
+        
 </body>
 </html>
